@@ -1,0 +1,69 @@
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: var(--md-sys-color-secondary);
+    font-family: var(--md-ref-typeface-brand);
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    padding: 2px 20px 2px 20px;
+}
+
+.sidebar nav ul li a {
+    color: var(--md-sys-color-primary);
+    text-decoration: none;
+}
+
+.sidebar .logo img {
+    width: 50%;
+    height: 50%;
+}
+
+.sidebar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Вы можете установить высоту, которая вам нужна */
+}
+
+.nav-btn {
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+    font-family: var(--md-ref-typeface-brand), sans-serif;
+    font-size: 1.2em;
+    color: var(--md-sys-color-primary);
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-btn:hover {
+    background-color: #DEE1D3;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+}
+
+.active {
+    cursor: none;
+    font-weight: bold;
+    background-color: #D9E7CA;
+    border-radius: 10px;
+}

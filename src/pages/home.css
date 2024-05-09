@@ -1,0 +1,33 @@
+
+.container {
+    display: flex;
+}
+
+.item {
+    flex: 1;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.supa1 {
+    background-color: #F0F3E8;
+    padding: 70px 40px;
+}
+
+.supa2 {
+    background-image: url('/public/adbook.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 390px);
+    background-color: #D9E7CA;
+    padding: 40px;
+}
+
+md-list {
+    border-radius: 15px;
+}
+
+md-list-item img {
+    width: 70px;
+    border-radius: 10px;
+}
