@@ -3,14 +3,15 @@ import {useRef} from "react";
 
 
 function handlePayment(amount) {
-    const method = document.querySelector('md-radio[name="payment"][checked]').value;
+    let method = document.querySelectorAll("md-radio");
+    method = Array.from(method).find(radio => radio.tabIndex === 0).value;
 
     // This code must be on the server.
 
     // Demo token
     const token_key = "bcb6682d738f27868c8188a7053065e14e6c67fae68bde3528f113cd05ec1781";
     // const url = process.env.REACT_APP_API_URL;
-    const url = import.meta.env.VITE_API_URL;
+    const url = new URL(import.meta.env.VITE_API_URL);
 
     let payload = {
         amount: amount,
@@ -29,7 +30,8 @@ function handlePayment(amount) {
     .then(response => response.json())
     .then(data => {
         console.log('Success:', data);
-        window.open(`${url}/payments/${data.id}`, '_blank');
+        let url_without_path = url.toString().replace(url.pathname, '');
+        window.open(`${url_without_path}/payments/${data.id}`, '_blank');
     })
     .catch((error) => {
         console.error('Error:', error);
