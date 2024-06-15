@@ -10,7 +10,7 @@ function handlePayment(amount) {
     // Demo token
     const token_key = "bcb6682d738f27868c8188a7053065e14e6c67fae68bde3528f113cd05ec1781";
     // const url = process.env.REACT_APP_API_URL;
-    const url = "http://localhost:8080";
+    const url = import.meta.env.VITE_API_URL;
 
     let payload = {
         amount: amount,
