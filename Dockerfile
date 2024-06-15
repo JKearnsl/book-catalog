@@ -1,4 +1,4 @@
-FROM node:18.17.0-alpine as build
+FROM node:22.3.0-alpine as build
 
 ARG MODE=production
 ARG VITE_API_URL
