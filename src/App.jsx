@@ -2,7 +2,6 @@ import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Catalog from "./pages/Catalog.jsx";
 import Sidebar from "./widgets/Sidebar.jsx";
-import About from "./widgets/About.jsx";
 import Book from "./pages/Book.jsx";
 
 function App() {
